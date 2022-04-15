@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function saltarLinea() 
+        {
+            document.write("<br>");
+        }
+
+        function imprimir(frase) 
+        {
+            document.write(frase);
+            saltarLinea();
+        }
+
+        var edad = parseInt(prompt("¿Cuál es tu edad?"));
+        var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+        if (edad >= 18 ){
+            if(tieneLicencia == "S"){
+                imprimir("Usted puede condicir");
+            }
+
+            else {
+                imprimir("Usted no puede conducir aunque tenga la edad");
+            }
+        }
+
+        else{
+            imprimir("No puede conducir");
+            // if(tieneLicencia = "S")
+            // {
+            //     imprimir("Usted puede conducir aunque no sea mayor de edad");
+
+            // }
+            // else {
+            //     imprimir("usted no puede conducir, no tiene licencia, ni cuenta con la edad")
+            // }
+        }
+
+    </script>
+</body>
+</html>
