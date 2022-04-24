@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600", height="400"></canvas>
+
+    <script>
+
+        function dibujarC(x,y,color,h,w){
+            var pantalla= document.querySelector("canvas");
+            var pincel = pantalla.getContext("2d");
+
+            pincel.fillStyle=color;
+            pincel.fillRect(x,y,h,w);
+            pincel.strokeStyle = "black";
+            pincel.strokeRect(x,y,h,w);
+        }
+
+        dibujarC(0, 0,"cyan",50 , 50);
+        dibujarC(0, 50,"lightgreen", 50 , 50);
+        dibujarC(0, 100,"magenta", 50 , 50);
+
+        var x=0
+        while (x < 600){
+
+            dibujarC(x, 0,"cyan",50 , 50);
+            dibujarC(x, 50,"lightgreen", 50 , 50);
+            dibujarC(x, 100,"magenta", 50 , 50);
+
+            x = x + 50;
+        }
+
+        for (var i = 0 ; i < 600; i = i + 50){
+            dibujarC(i, 200,"azure",50 , 50);
+            dibujarC(i, 250,"aquamarine", 50 , 50);
+            dibujarC(i, 300,"Lavender", 50 , 50);
+        }
+        
+    </script>
+</body>
+</html>
