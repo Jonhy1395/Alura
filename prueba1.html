@@ -9,10 +9,33 @@
 <body>
     <script>
 
-        var palabra = "fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!";
+        var palabra = "fEnterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!";
         palabra=palabra.replace(/ober/g,"o");
+        palabra=palabra.replace(/imes/g,"i");
+        palabra=palabra.replace(/ai/g,"a");
+        palabra=palabra.replace(/enter/g,"e");
+        palabra=palabra.replace(/ufat/g,"u");
+        document.write(palabra + "\n");
         console.log(palabra);
+
+        
+
+        var palabra2 = "fElicidades por enfrentar este desafio y haberlo concluido con exito!"
+        palabra2=palabra2.replace(/e/g,"enter");
+        palabra2=palabra2.replace(/i/g,"imes");
+        palabra2=palabra2.replace(/a/g,"ai");
+        palabra2=palabra2.replace(/o/g,"ober");
+        palabra2=palabra2.replace(/u/g,"ufat");
+        document.write(palabra2 + "\n");
 
     </script>
 </body>
 </html>
+
+<!-- 
+La letra "e" es convertida para "enter"
+La letra "i" es convertida para "imes"
+La letra "a" es convertida para "ai"
+La letra "o" es convertida para "ober"
+La letra "u" es convertida para "ufat"
+-->
