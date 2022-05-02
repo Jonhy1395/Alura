@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero pares del 1 al 100</title>
+</head>
+<body>
+    <h1>
+        Numeros pares del 1 al 100
+    </h1>
+
+    <script>
+
+        var inicioDeSesionRegistrado = "alura";
+        var contrasenhaRegistrada = "alura321";
+
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        var intento=1;
+
+            while(intento <= 3){
+
+                if( inicioDeSesionRegistrado != inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+                alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+                }
+                else {
+                alert("inicio de sesión inválido. Favor intente de nuevo");
+
+                intento++;
+            }
+    
+
+          
+            }
+            if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+                alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            } else {
+                alert("inicio de sesión inválido. Favor intente de nuevo");
+            }
+
+    </script>
+</body>
+</html>
