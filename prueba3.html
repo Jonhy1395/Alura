@@ -5,78 +5,78 @@
     <title>Document</title>
    <style>
    
-   body{
+        body{
             background: #e9ecf8;
             display: flex;
+            margin:12px;  
+             
+        }
+
+        .contenedor{
+            display: flex;
+            /* width: 100%;
+            height: 100%; */
             justify-content: space-between;
+            gap: 20px;
             
         }
-
-.contenedor{
-   width: 100%;
-  display: flex;
-  gap: 20px;
-  
-}
        
-        .logo{
-            margin-bottom: auto;
-        }
-
-        .texto{
-            margin-top:auto;
-/*             background: #e9ecf8; */
-/*             display: flex; */
-            width: 70%;
+        .cont1{
+            
+            width: 60%;
             height: 600px;
             border: 1px solid;
             border-radius: 10px;
-/*             justify-content: space-between; */
+            padding: 12px;
+            justify-content: flex-start;
         }
 
-        .text2{
+        .cont2{
             background: white;
-/*             margin-left: auto; */
             width: 30%;
             height: 600px;
             border: 2px blue solid;
             border-radius: 10px;
+            margin-left: auto;
+            margin-right: 24px;
+            padding: 12px;
+            justify-content: flex-end;
         }
-        
-/*         .botones{
-          display: flex;
-          margin-top: 80px;
-          
-        justify-content: center;
-        } */
-
-
 
    </style>
 </head>
+
 <body>
 
-<!--     <header>
-     <img src="logo.png" class="logo" alt="logo">
-  </header> -->
-  <section class="contenedor">
-<!--     <input type=text class="texto" value="Ingrese su texto aqui"> -->
-     <div class="texto">
-        <h1>
-            texto
-        </h1>
-    </div>
     
-    <div class="text2">
-        <h1>
-            texto
-        </h1>
-    </div>
+        
+  
+    <section class="contenedor">
+
+        <div class="cont1">
+
+            <img src="./iconos/Vector.png" class="logo" alt ="logo">
     
-<!--     <div class="botones">
-        <button class="encriptar">encript</button>
-        <button class="desencriptar">desencript</button>
-    </div> -->
-  </section>
+            <h1>
+                texto
+            </h1>
+
+            <div class="botones">
+                <button class="encriptar">encript</button>
+                <button class="desencriptar">desencript</button>
+            </div>
+            
+        </div>
+        
+        <div class="cont2">
+            
+            <img src="./iconos/Muñeco.png" class="logo" alt ="logo">
+            
+            <h1>
+                texto
+            </h1>
+        </div>
+
+    </section>
 </body>
 </html>
