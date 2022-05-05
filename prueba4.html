@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background: #e9ecf8;
+            
+        }
+        .contenedor {
+            display:flex;
+            width:100%;
+            height: 100%;
+            gap:20px;
+        }
+        
+        .seccion1{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .texto{
+            margin-top:auto;
+            background: #e9ecf8;
+            display: flex;
+            width:100%;
+            height: 400px;
+            border: 1px solid papayawhip;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="contenedor">
+        
+        <section class="seccion1">
+            <header class="logo">
+                <img src="./iconos/Vector.png" class="logo" alt ="logo">
+            </header>
+
+            <input type="text" class="texto" value="" placeholder="Ingrese su texto" >
+
+            <h6>Solo letras minusculas y sin acentos</h6>
+            <div>
+                <button class="encriptar">encript</button>
+                <button class="desencriptar">desencript</button>
+            </div>
+        </section>
+    
+        <section class="seccion">
+            <input type="text"value="" placeholder="texto">
+            <img src="./iconos/Muñeco.pn" class="logo" alt ="logo">
+        </section>
+    </main>
+</body>
+</html>
