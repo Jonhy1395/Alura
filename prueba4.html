@@ -15,21 +15,60 @@
             width:100%;
             height: 100%;
             gap:20px;
+            justify-content: space-between;
+            align-content: center;
         }
         
         .seccion1{
             display: flex;
             flex-direction: column;
+            align-content: center;
+
         }
         
         .texto{
-            margin-top:auto;
             background: #e9ecf8;
-            display: flex;
             width:100%;
-            height: 400px;
+            height: 200px;
             border: 1px solid papayawhip;
-            justify-content: space-between;
+            
+        }
+
+        .seccion2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .text2{
+            background: white;
+            /* margin-left: auto; */
+            margin-right: 40px;
+            width: 100%;
+            height: 550px;
+            border: 2px blue solid;
+            border-radius: 20px;
+            /* display: flex;
+            flex-direction: row; */
+            gap:10px;
+            justify-content: center;
+            align-content: center;
+        }
+        .texto3{
+            background: white;
+            margin-left: auto;
+            justify-content: center;
+        }
+        .muñeco{
+            max-width: 50%;
+            max-height: 50%;
+            object-fit: contain;
+            background: none;
+        }
+        .botones{
+            /* display: flex; */
+            justify-content: flex-start;
+            align-items: flex-end;
         }
 
     </style>
@@ -44,16 +83,18 @@
 
             <input type="text" class="texto" value="" placeholder="Ingrese su texto" >
 
-            <h6>Solo letras minusculas y sin acentos</h6>
-            <div>
+            <div class="botones">
+                <h6>Solo letras minusculas y sin acentos</h6>
                 <button class="encriptar">encript</button>
                 <button class="desencriptar">desencript</button>
             </div>
         </section>
     
-        <section class="seccion">
-            <input type="text"value="" placeholder="texto">
-            <img src="./iconos/Muñeco.pn" class="logo" alt ="logo">
+        <section class="seccion2">
+            <text class="text2">
+                <img src="./iconos/Muñeco.png" class="muñeco" alt ="logo">
+                <h2 class="texto3">Este es el texto encriptado</h2>
+            </text>
         </section>
     </main>
 </body>
